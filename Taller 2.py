@@ -48,3 +48,13 @@ if(fianza > 0):
         print(f'El valor de la cuota a pagar es: ${cuota:,}')
 else:
     print("Digite un valor a pagar valido")
+
+# Ejercicio 4
+
+# Ejercicio 5
+devaluacion = float(input('Porcentaje de devalucación del vehiculo: '))
+valorizacion = float(input('Porcentaje de valorización del terreno: '))
+if(devaluacion * 3 <= valorizacion * 1.5):
+    print('Se recomienda comprar el vehiculo')
+else:
+    print('Se recomienda comprar el terreno')

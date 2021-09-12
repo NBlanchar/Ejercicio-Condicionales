@@ -42,10 +42,9 @@ fianza = float(input('Digite el valor de la fianza: $'))
 if(fianza > 0):
     if(fianza < 50000):
         cuota = fianza * 0.03
-        print(f'El valor de la cuota a pagar es: ${cuota:,}')
     else:
         cuota = fianza * 0.02
-        print(f'El valor de la cuota a pagar es: ${cuota:,}')
+    print(f'El valor de la cuota a pagar es: ${cuota:,}')
 else:
     print("Digite un valor a pagar valido")
 
@@ -58,3 +57,19 @@ if(devaluacion * 3 <= valorizacion * 1.5):
     print('Se recomienda comprar el vehiculo')
 else:
     print('Se recomienda comprar el terreno')
+
+# Ejercicio 6
+num_computadores = int(input('Digite la cantidad de computadores a comprar: '))
+subtotal = 11000 * num_computadores
+if(num_computadores > 0):
+    if(num_computadores < 5):
+        total = subtotal - (subtotal * 0.1)
+    elif(num_computadores >= 5 and num_computadores < 10):
+        total = subtotal - (subtotal * 0.2)
+    else:
+        total = subtotal - (subtotal * 0.4)
+    print(f'El total sin descuento es: ${subtotal}')
+    print(f'El total a pagar es: ${total}')
+else:
+    print('Digite un valor valido')
+    

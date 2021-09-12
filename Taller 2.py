@@ -36,3 +36,15 @@ if(total_compra > 0):
         print(f'El total a pagar es: ${total:,}')
 else:
     print("Digite un valor a pagar valido")
+
+# Ejercico 3
+fianza = float(input('Digite el valor de la fianza: $'))
+if(fianza > 0):
+    if(fianza < 50000):
+        cuota = fianza * 0.03
+        print(f'El valor de la cuota a pagar es: ${cuota:,}')
+    else:
+        cuota = fianza * 0.02
+        print(f'El valor de la cuota a pagar es: ${cuota:,}')
+else:
+    print("Digite un valor a pagar valido")

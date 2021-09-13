@@ -72,4 +72,19 @@ if(num_computadores > 0):
     print(f'El total a pagar es: ${total}')
 else:
     print('Digite un valor valido')
-    
+
+# Ejercicio 7
+costo = float(input('Digitar costo del equipo sin iva: '))
+marca = input('Digitar marca del equipo: ')
+if(costo > 0):
+    if(costo >= 2000 and marca == 'NOSY'):
+        costo = costo - (costo * 0.15)
+    elif (marca == 'NOSY'):
+        costo = costo - (costo * 0.05)
+    elif(costo >= 2000):
+        costo = costo - (costo * 0.05)
+    costo = costo + (costo * 0.16)
+    print(f'EL total a pagar por el equipo es: ${costo}')
+else:
+    print("Digite valor valido")
+        

@@ -106,3 +106,15 @@ if(precio > 0):
     print(f'El valor del interes al fabricante es: ${interes:,}')
 else:
     print('Digite un valor valido')
+
+# Ejercicio 9
+num1 = float(input('Digite numero 1: '))
+num2 = float(input('Digite numero 2 :'))
+if(num1 == num2):
+    resultado = num1 * num2
+elif(num1 > num2):
+    resultado = num1 - num2
+else:
+    resultado = num1 + num2
+print(f'El resultado de la operación es: {resultado}')
+

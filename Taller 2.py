@@ -109,7 +109,7 @@ else:
 
 # Ejercicio 9
 num1 = float(input('Digite numero 1: '))
-num2 = float(input('Digite numero 2 :'))
+num2 = float(input('Digite numero 2: '))
 if(num1 == num2):
     resultado = num1 * num2
 elif(num1 > num2):
@@ -118,3 +118,17 @@ else:
     resultado = num1 + num2
 print(f'El resultado de la operación es: {resultado}')
 
+# Ejercicio 10
+num1 = float(input('Digite numero 1: '))
+num2 = float(input('Digite numero 2: '))
+num3 = float(input('Digite numero 3: '))
+if(num1 != num2 and num1 != num3 and num2 != num3):
+    if(num1 > num2 and num1 > num3):
+        print(f'El numero mayor es {num1}')
+    elif(num2 > num1 and num2 > num3):
+        print(f'El numero mayor es {num2}')
+    else:
+        print(f'El numero mayor es {num3}')
+else:
+    print('Los numero deben ser diferentes')
+    

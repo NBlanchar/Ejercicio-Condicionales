@@ -84,7 +84,25 @@ if(costo > 0):
     elif(costo >= 2000):
         costo = costo - (costo * 0.05)
     costo = costo + (costo * 0.16)
-    print(f'EL total a pagar por el equipo es: ${costo}')
+    print(f'EL total a pagar por el equipo es: ${costo:,}')
 else:
     print("Digite valor valido")
-        
+
+# Ejercicio 8
+precio = float(input('Digite el moto de la compra: '))
+prestamo = 0
+if(precio > 0):
+    if(precio > 500000):
+        inversion = precio * 0.55
+        prestamo = precio * 0.30
+        credito = precio * 0.15        
+    else:
+        inversion = precio * 0.7
+        credito = precio * 0.3
+    interes = credito * 0.20
+    print(f'El valor de la inversión es: ${inversion:,}')
+    print(f'El valor del prestamos bancario es: $ {prestamo:,}')
+    print(f'EL valor del credito al fabricante es: ${credito:,}')
+    print(f'El valor del interes al fabricante es: ${interes:,}')
+else:
+    print('Digite un valor valido')
